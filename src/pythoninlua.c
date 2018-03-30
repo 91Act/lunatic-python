@@ -79,11 +79,11 @@ int py_convert(lua_State *L, PyObject *o)
         ret = 1;
 #if PY_MAJOR_VERSION < 3
     } else if (PyInt_Check(o)) {
-        lua_pushnumber(L, (lua_Number)PyInt_AsLong(o));
+        lua_pushinteger(L, (lua_Number)PyInt_AsLong(o));
         ret = 1;
 #endif
     } else if (PyLong_Check(o)) {
-        lua_pushnumber(L, (lua_Number)PyLong_AsLong(o));
+        lua_pushinteger(L, (lua_Number)PyLong_AsLong(o));
         ret = 1;
     } else if (PyFloat_Check(o)) {
         lua_pushnumber(L, (lua_Number)PyFloat_AsDouble(o));
@@ -611,7 +611,7 @@ LUA_API int luaopen_python(lua_State *L)
     lua_pop(L, 1);
 
     /* Initialize Lua state in Python territory */
-    if (!LuaState) LuaState = L;
+    // if (!LuaState) LuaState = L;
 
     /* Initialize Python interpreter */
     if (!Py_IsInitialized())

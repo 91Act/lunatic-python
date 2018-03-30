@@ -34,6 +34,7 @@ typedef struct
     PyObject_HEAD
     int ref;
     int refiter;
+    lua_State* L;
 } LuaObject;
 
 extern PyTypeObject LuaObject_Type;
@@ -42,7 +43,7 @@ extern PyTypeObject LuaObject_Type;
 
 PyObject* LuaConvert(lua_State *L, int n);
 
-extern lua_State *LuaState;
+// extern lua_State *LuaState;
 
 #if PY_MAJOR_VERSION < 3
 #  define PyInit_lua initlua

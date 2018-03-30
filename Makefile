@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.7.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jayyang/lunatic-python
+CMAKE_SOURCE_DIR = /Users/jayyang/dev_tools/public/lunatic-python
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jayyang/lunatic-python
+CMAKE_BINARY_DIR = /Users/jayyang/dev_tools/public/lunatic-python
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jayyang/lunatic-python/CMakeFiles /Users/jayyang/lunatic-python/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jayyang/dev_tools/public/lunatic-python/CMakeFiles /Users/jayyang/dev_tools/public/lunatic-python/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jayyang/lunatic-python/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jayyang/dev_tools/public/lunatic-python/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,31 +123,950 @@ lua/fast:
 	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/build
 .PHONY : lua/fast
 
-#=============================================================================
-# Target rules for targets named python
+lua/lapi.o: lua/lapi.c.o
 
-# Build rule for target.
-python: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 python
-.PHONY : python
+.PHONY : lua/lapi.o
 
-# fast build rule for target.
-python/fast:
-	$(MAKE) -f CMakeFiles/python.dir/build.make CMakeFiles/python.dir/build
-.PHONY : python/fast
+# target to build an object file
+lua/lapi.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lapi.c.o
+.PHONY : lua/lapi.c.o
 
-#=============================================================================
-# Target rules for targets named src
+lua/lapi.i: lua/lapi.c.i
 
-# Build rule for target.
-src: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 src
-.PHONY : src
+.PHONY : lua/lapi.i
 
-# fast build rule for target.
-src/fast:
-	$(MAKE) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/build
-.PHONY : src/fast
+# target to preprocess a source file
+lua/lapi.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lapi.c.i
+.PHONY : lua/lapi.c.i
+
+lua/lapi.s: lua/lapi.c.s
+
+.PHONY : lua/lapi.s
+
+# target to generate assembly for a file
+lua/lapi.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lapi.c.s
+.PHONY : lua/lapi.c.s
+
+lua/lauxlib.o: lua/lauxlib.c.o
+
+.PHONY : lua/lauxlib.o
+
+# target to build an object file
+lua/lauxlib.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lauxlib.c.o
+.PHONY : lua/lauxlib.c.o
+
+lua/lauxlib.i: lua/lauxlib.c.i
+
+.PHONY : lua/lauxlib.i
+
+# target to preprocess a source file
+lua/lauxlib.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lauxlib.c.i
+.PHONY : lua/lauxlib.c.i
+
+lua/lauxlib.s: lua/lauxlib.c.s
+
+.PHONY : lua/lauxlib.s
+
+# target to generate assembly for a file
+lua/lauxlib.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lauxlib.c.s
+.PHONY : lua/lauxlib.c.s
+
+lua/lbaselib.o: lua/lbaselib.c.o
+
+.PHONY : lua/lbaselib.o
+
+# target to build an object file
+lua/lbaselib.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lbaselib.c.o
+.PHONY : lua/lbaselib.c.o
+
+lua/lbaselib.i: lua/lbaselib.c.i
+
+.PHONY : lua/lbaselib.i
+
+# target to preprocess a source file
+lua/lbaselib.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lbaselib.c.i
+.PHONY : lua/lbaselib.c.i
+
+lua/lbaselib.s: lua/lbaselib.c.s
+
+.PHONY : lua/lbaselib.s
+
+# target to generate assembly for a file
+lua/lbaselib.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lbaselib.c.s
+.PHONY : lua/lbaselib.c.s
+
+lua/lbitlib.o: lua/lbitlib.c.o
+
+.PHONY : lua/lbitlib.o
+
+# target to build an object file
+lua/lbitlib.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lbitlib.c.o
+.PHONY : lua/lbitlib.c.o
+
+lua/lbitlib.i: lua/lbitlib.c.i
+
+.PHONY : lua/lbitlib.i
+
+# target to preprocess a source file
+lua/lbitlib.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lbitlib.c.i
+.PHONY : lua/lbitlib.c.i
+
+lua/lbitlib.s: lua/lbitlib.c.s
+
+.PHONY : lua/lbitlib.s
+
+# target to generate assembly for a file
+lua/lbitlib.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lbitlib.c.s
+.PHONY : lua/lbitlib.c.s
+
+lua/lcode.o: lua/lcode.c.o
+
+.PHONY : lua/lcode.o
+
+# target to build an object file
+lua/lcode.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lcode.c.o
+.PHONY : lua/lcode.c.o
+
+lua/lcode.i: lua/lcode.c.i
+
+.PHONY : lua/lcode.i
+
+# target to preprocess a source file
+lua/lcode.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lcode.c.i
+.PHONY : lua/lcode.c.i
+
+lua/lcode.s: lua/lcode.c.s
+
+.PHONY : lua/lcode.s
+
+# target to generate assembly for a file
+lua/lcode.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lcode.c.s
+.PHONY : lua/lcode.c.s
+
+lua/lcorolib.o: lua/lcorolib.c.o
+
+.PHONY : lua/lcorolib.o
+
+# target to build an object file
+lua/lcorolib.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lcorolib.c.o
+.PHONY : lua/lcorolib.c.o
+
+lua/lcorolib.i: lua/lcorolib.c.i
+
+.PHONY : lua/lcorolib.i
+
+# target to preprocess a source file
+lua/lcorolib.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lcorolib.c.i
+.PHONY : lua/lcorolib.c.i
+
+lua/lcorolib.s: lua/lcorolib.c.s
+
+.PHONY : lua/lcorolib.s
+
+# target to generate assembly for a file
+lua/lcorolib.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lcorolib.c.s
+.PHONY : lua/lcorolib.c.s
+
+lua/lctype.o: lua/lctype.c.o
+
+.PHONY : lua/lctype.o
+
+# target to build an object file
+lua/lctype.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lctype.c.o
+.PHONY : lua/lctype.c.o
+
+lua/lctype.i: lua/lctype.c.i
+
+.PHONY : lua/lctype.i
+
+# target to preprocess a source file
+lua/lctype.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lctype.c.i
+.PHONY : lua/lctype.c.i
+
+lua/lctype.s: lua/lctype.c.s
+
+.PHONY : lua/lctype.s
+
+# target to generate assembly for a file
+lua/lctype.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lctype.c.s
+.PHONY : lua/lctype.c.s
+
+lua/ldblib.o: lua/ldblib.c.o
+
+.PHONY : lua/ldblib.o
+
+# target to build an object file
+lua/ldblib.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ldblib.c.o
+.PHONY : lua/ldblib.c.o
+
+lua/ldblib.i: lua/ldblib.c.i
+
+.PHONY : lua/ldblib.i
+
+# target to preprocess a source file
+lua/ldblib.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ldblib.c.i
+.PHONY : lua/ldblib.c.i
+
+lua/ldblib.s: lua/ldblib.c.s
+
+.PHONY : lua/ldblib.s
+
+# target to generate assembly for a file
+lua/ldblib.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ldblib.c.s
+.PHONY : lua/ldblib.c.s
+
+lua/ldebug.o: lua/ldebug.c.o
+
+.PHONY : lua/ldebug.o
+
+# target to build an object file
+lua/ldebug.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ldebug.c.o
+.PHONY : lua/ldebug.c.o
+
+lua/ldebug.i: lua/ldebug.c.i
+
+.PHONY : lua/ldebug.i
+
+# target to preprocess a source file
+lua/ldebug.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ldebug.c.i
+.PHONY : lua/ldebug.c.i
+
+lua/ldebug.s: lua/ldebug.c.s
+
+.PHONY : lua/ldebug.s
+
+# target to generate assembly for a file
+lua/ldebug.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ldebug.c.s
+.PHONY : lua/ldebug.c.s
+
+lua/ldo.o: lua/ldo.c.o
+
+.PHONY : lua/ldo.o
+
+# target to build an object file
+lua/ldo.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ldo.c.o
+.PHONY : lua/ldo.c.o
+
+lua/ldo.i: lua/ldo.c.i
+
+.PHONY : lua/ldo.i
+
+# target to preprocess a source file
+lua/ldo.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ldo.c.i
+.PHONY : lua/ldo.c.i
+
+lua/ldo.s: lua/ldo.c.s
+
+.PHONY : lua/ldo.s
+
+# target to generate assembly for a file
+lua/ldo.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ldo.c.s
+.PHONY : lua/ldo.c.s
+
+lua/ldump.o: lua/ldump.c.o
+
+.PHONY : lua/ldump.o
+
+# target to build an object file
+lua/ldump.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ldump.c.o
+.PHONY : lua/ldump.c.o
+
+lua/ldump.i: lua/ldump.c.i
+
+.PHONY : lua/ldump.i
+
+# target to preprocess a source file
+lua/ldump.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ldump.c.i
+.PHONY : lua/ldump.c.i
+
+lua/ldump.s: lua/ldump.c.s
+
+.PHONY : lua/ldump.s
+
+# target to generate assembly for a file
+lua/ldump.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ldump.c.s
+.PHONY : lua/ldump.c.s
+
+lua/lfunc.o: lua/lfunc.c.o
+
+.PHONY : lua/lfunc.o
+
+# target to build an object file
+lua/lfunc.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lfunc.c.o
+.PHONY : lua/lfunc.c.o
+
+lua/lfunc.i: lua/lfunc.c.i
+
+.PHONY : lua/lfunc.i
+
+# target to preprocess a source file
+lua/lfunc.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lfunc.c.i
+.PHONY : lua/lfunc.c.i
+
+lua/lfunc.s: lua/lfunc.c.s
+
+.PHONY : lua/lfunc.s
+
+# target to generate assembly for a file
+lua/lfunc.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lfunc.c.s
+.PHONY : lua/lfunc.c.s
+
+lua/lgc.o: lua/lgc.c.o
+
+.PHONY : lua/lgc.o
+
+# target to build an object file
+lua/lgc.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lgc.c.o
+.PHONY : lua/lgc.c.o
+
+lua/lgc.i: lua/lgc.c.i
+
+.PHONY : lua/lgc.i
+
+# target to preprocess a source file
+lua/lgc.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lgc.c.i
+.PHONY : lua/lgc.c.i
+
+lua/lgc.s: lua/lgc.c.s
+
+.PHONY : lua/lgc.s
+
+# target to generate assembly for a file
+lua/lgc.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lgc.c.s
+.PHONY : lua/lgc.c.s
+
+lua/linit.o: lua/linit.c.o
+
+.PHONY : lua/linit.o
+
+# target to build an object file
+lua/linit.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/linit.c.o
+.PHONY : lua/linit.c.o
+
+lua/linit.i: lua/linit.c.i
+
+.PHONY : lua/linit.i
+
+# target to preprocess a source file
+lua/linit.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/linit.c.i
+.PHONY : lua/linit.c.i
+
+lua/linit.s: lua/linit.c.s
+
+.PHONY : lua/linit.s
+
+# target to generate assembly for a file
+lua/linit.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/linit.c.s
+.PHONY : lua/linit.c.s
+
+lua/liolib.o: lua/liolib.c.o
+
+.PHONY : lua/liolib.o
+
+# target to build an object file
+lua/liolib.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/liolib.c.o
+.PHONY : lua/liolib.c.o
+
+lua/liolib.i: lua/liolib.c.i
+
+.PHONY : lua/liolib.i
+
+# target to preprocess a source file
+lua/liolib.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/liolib.c.i
+.PHONY : lua/liolib.c.i
+
+lua/liolib.s: lua/liolib.c.s
+
+.PHONY : lua/liolib.s
+
+# target to generate assembly for a file
+lua/liolib.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/liolib.c.s
+.PHONY : lua/liolib.c.s
+
+lua/llex.o: lua/llex.c.o
+
+.PHONY : lua/llex.o
+
+# target to build an object file
+lua/llex.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/llex.c.o
+.PHONY : lua/llex.c.o
+
+lua/llex.i: lua/llex.c.i
+
+.PHONY : lua/llex.i
+
+# target to preprocess a source file
+lua/llex.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/llex.c.i
+.PHONY : lua/llex.c.i
+
+lua/llex.s: lua/llex.c.s
+
+.PHONY : lua/llex.s
+
+# target to generate assembly for a file
+lua/llex.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/llex.c.s
+.PHONY : lua/llex.c.s
+
+lua/lmathlib.o: lua/lmathlib.c.o
+
+.PHONY : lua/lmathlib.o
+
+# target to build an object file
+lua/lmathlib.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lmathlib.c.o
+.PHONY : lua/lmathlib.c.o
+
+lua/lmathlib.i: lua/lmathlib.c.i
+
+.PHONY : lua/lmathlib.i
+
+# target to preprocess a source file
+lua/lmathlib.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lmathlib.c.i
+.PHONY : lua/lmathlib.c.i
+
+lua/lmathlib.s: lua/lmathlib.c.s
+
+.PHONY : lua/lmathlib.s
+
+# target to generate assembly for a file
+lua/lmathlib.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lmathlib.c.s
+.PHONY : lua/lmathlib.c.s
+
+lua/lmem.o: lua/lmem.c.o
+
+.PHONY : lua/lmem.o
+
+# target to build an object file
+lua/lmem.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lmem.c.o
+.PHONY : lua/lmem.c.o
+
+lua/lmem.i: lua/lmem.c.i
+
+.PHONY : lua/lmem.i
+
+# target to preprocess a source file
+lua/lmem.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lmem.c.i
+.PHONY : lua/lmem.c.i
+
+lua/lmem.s: lua/lmem.c.s
+
+.PHONY : lua/lmem.s
+
+# target to generate assembly for a file
+lua/lmem.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lmem.c.s
+.PHONY : lua/lmem.c.s
+
+lua/loadlib.o: lua/loadlib.c.o
+
+.PHONY : lua/loadlib.o
+
+# target to build an object file
+lua/loadlib.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/loadlib.c.o
+.PHONY : lua/loadlib.c.o
+
+lua/loadlib.i: lua/loadlib.c.i
+
+.PHONY : lua/loadlib.i
+
+# target to preprocess a source file
+lua/loadlib.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/loadlib.c.i
+.PHONY : lua/loadlib.c.i
+
+lua/loadlib.s: lua/loadlib.c.s
+
+.PHONY : lua/loadlib.s
+
+# target to generate assembly for a file
+lua/loadlib.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/loadlib.c.s
+.PHONY : lua/loadlib.c.s
+
+lua/lobject.o: lua/lobject.c.o
+
+.PHONY : lua/lobject.o
+
+# target to build an object file
+lua/lobject.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lobject.c.o
+.PHONY : lua/lobject.c.o
+
+lua/lobject.i: lua/lobject.c.i
+
+.PHONY : lua/lobject.i
+
+# target to preprocess a source file
+lua/lobject.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lobject.c.i
+.PHONY : lua/lobject.c.i
+
+lua/lobject.s: lua/lobject.c.s
+
+.PHONY : lua/lobject.s
+
+# target to generate assembly for a file
+lua/lobject.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lobject.c.s
+.PHONY : lua/lobject.c.s
+
+lua/lopcodes.o: lua/lopcodes.c.o
+
+.PHONY : lua/lopcodes.o
+
+# target to build an object file
+lua/lopcodes.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lopcodes.c.o
+.PHONY : lua/lopcodes.c.o
+
+lua/lopcodes.i: lua/lopcodes.c.i
+
+.PHONY : lua/lopcodes.i
+
+# target to preprocess a source file
+lua/lopcodes.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lopcodes.c.i
+.PHONY : lua/lopcodes.c.i
+
+lua/lopcodes.s: lua/lopcodes.c.s
+
+.PHONY : lua/lopcodes.s
+
+# target to generate assembly for a file
+lua/lopcodes.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lopcodes.c.s
+.PHONY : lua/lopcodes.c.s
+
+lua/loslib.o: lua/loslib.c.o
+
+.PHONY : lua/loslib.o
+
+# target to build an object file
+lua/loslib.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/loslib.c.o
+.PHONY : lua/loslib.c.o
+
+lua/loslib.i: lua/loslib.c.i
+
+.PHONY : lua/loslib.i
+
+# target to preprocess a source file
+lua/loslib.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/loslib.c.i
+.PHONY : lua/loslib.c.i
+
+lua/loslib.s: lua/loslib.c.s
+
+.PHONY : lua/loslib.s
+
+# target to generate assembly for a file
+lua/loslib.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/loslib.c.s
+.PHONY : lua/loslib.c.s
+
+lua/lparser.o: lua/lparser.c.o
+
+.PHONY : lua/lparser.o
+
+# target to build an object file
+lua/lparser.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lparser.c.o
+.PHONY : lua/lparser.c.o
+
+lua/lparser.i: lua/lparser.c.i
+
+.PHONY : lua/lparser.i
+
+# target to preprocess a source file
+lua/lparser.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lparser.c.i
+.PHONY : lua/lparser.c.i
+
+lua/lparser.s: lua/lparser.c.s
+
+.PHONY : lua/lparser.s
+
+# target to generate assembly for a file
+lua/lparser.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lparser.c.s
+.PHONY : lua/lparser.c.s
+
+lua/lstate.o: lua/lstate.c.o
+
+.PHONY : lua/lstate.o
+
+# target to build an object file
+lua/lstate.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lstate.c.o
+.PHONY : lua/lstate.c.o
+
+lua/lstate.i: lua/lstate.c.i
+
+.PHONY : lua/lstate.i
+
+# target to preprocess a source file
+lua/lstate.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lstate.c.i
+.PHONY : lua/lstate.c.i
+
+lua/lstate.s: lua/lstate.c.s
+
+.PHONY : lua/lstate.s
+
+# target to generate assembly for a file
+lua/lstate.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lstate.c.s
+.PHONY : lua/lstate.c.s
+
+lua/lstring.o: lua/lstring.c.o
+
+.PHONY : lua/lstring.o
+
+# target to build an object file
+lua/lstring.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lstring.c.o
+.PHONY : lua/lstring.c.o
+
+lua/lstring.i: lua/lstring.c.i
+
+.PHONY : lua/lstring.i
+
+# target to preprocess a source file
+lua/lstring.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lstring.c.i
+.PHONY : lua/lstring.c.i
+
+lua/lstring.s: lua/lstring.c.s
+
+.PHONY : lua/lstring.s
+
+# target to generate assembly for a file
+lua/lstring.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lstring.c.s
+.PHONY : lua/lstring.c.s
+
+lua/lstrlib.o: lua/lstrlib.c.o
+
+.PHONY : lua/lstrlib.o
+
+# target to build an object file
+lua/lstrlib.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lstrlib.c.o
+.PHONY : lua/lstrlib.c.o
+
+lua/lstrlib.i: lua/lstrlib.c.i
+
+.PHONY : lua/lstrlib.i
+
+# target to preprocess a source file
+lua/lstrlib.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lstrlib.c.i
+.PHONY : lua/lstrlib.c.i
+
+lua/lstrlib.s: lua/lstrlib.c.s
+
+.PHONY : lua/lstrlib.s
+
+# target to generate assembly for a file
+lua/lstrlib.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lstrlib.c.s
+.PHONY : lua/lstrlib.c.s
+
+lua/ltable.o: lua/ltable.c.o
+
+.PHONY : lua/ltable.o
+
+# target to build an object file
+lua/ltable.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ltable.c.o
+.PHONY : lua/ltable.c.o
+
+lua/ltable.i: lua/ltable.c.i
+
+.PHONY : lua/ltable.i
+
+# target to preprocess a source file
+lua/ltable.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ltable.c.i
+.PHONY : lua/ltable.c.i
+
+lua/ltable.s: lua/ltable.c.s
+
+.PHONY : lua/ltable.s
+
+# target to generate assembly for a file
+lua/ltable.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ltable.c.s
+.PHONY : lua/ltable.c.s
+
+lua/ltablib.o: lua/ltablib.c.o
+
+.PHONY : lua/ltablib.o
+
+# target to build an object file
+lua/ltablib.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ltablib.c.o
+.PHONY : lua/ltablib.c.o
+
+lua/ltablib.i: lua/ltablib.c.i
+
+.PHONY : lua/ltablib.i
+
+# target to preprocess a source file
+lua/ltablib.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ltablib.c.i
+.PHONY : lua/ltablib.c.i
+
+lua/ltablib.s: lua/ltablib.c.s
+
+.PHONY : lua/ltablib.s
+
+# target to generate assembly for a file
+lua/ltablib.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ltablib.c.s
+.PHONY : lua/ltablib.c.s
+
+lua/ltm.o: lua/ltm.c.o
+
+.PHONY : lua/ltm.o
+
+# target to build an object file
+lua/ltm.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ltm.c.o
+.PHONY : lua/ltm.c.o
+
+lua/ltm.i: lua/ltm.c.i
+
+.PHONY : lua/ltm.i
+
+# target to preprocess a source file
+lua/ltm.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ltm.c.i
+.PHONY : lua/ltm.c.i
+
+lua/ltm.s: lua/ltm.c.s
+
+.PHONY : lua/ltm.s
+
+# target to generate assembly for a file
+lua/ltm.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/ltm.c.s
+.PHONY : lua/ltm.c.s
+
+lua/lundump.o: lua/lundump.c.o
+
+.PHONY : lua/lundump.o
+
+# target to build an object file
+lua/lundump.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lundump.c.o
+.PHONY : lua/lundump.c.o
+
+lua/lundump.i: lua/lundump.c.i
+
+.PHONY : lua/lundump.i
+
+# target to preprocess a source file
+lua/lundump.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lundump.c.i
+.PHONY : lua/lundump.c.i
+
+lua/lundump.s: lua/lundump.c.s
+
+.PHONY : lua/lundump.s
+
+# target to generate assembly for a file
+lua/lundump.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lundump.c.s
+.PHONY : lua/lundump.c.s
+
+lua/lutf8lib.o: lua/lutf8lib.c.o
+
+.PHONY : lua/lutf8lib.o
+
+# target to build an object file
+lua/lutf8lib.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lutf8lib.c.o
+.PHONY : lua/lutf8lib.c.o
+
+lua/lutf8lib.i: lua/lutf8lib.c.i
+
+.PHONY : lua/lutf8lib.i
+
+# target to preprocess a source file
+lua/lutf8lib.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lutf8lib.c.i
+.PHONY : lua/lutf8lib.c.i
+
+lua/lutf8lib.s: lua/lutf8lib.c.s
+
+.PHONY : lua/lutf8lib.s
+
+# target to generate assembly for a file
+lua/lutf8lib.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lutf8lib.c.s
+.PHONY : lua/lutf8lib.c.s
+
+lua/lvm.o: lua/lvm.c.o
+
+.PHONY : lua/lvm.o
+
+# target to build an object file
+lua/lvm.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lvm.c.o
+.PHONY : lua/lvm.c.o
+
+lua/lvm.i: lua/lvm.c.i
+
+.PHONY : lua/lvm.i
+
+# target to preprocess a source file
+lua/lvm.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lvm.c.i
+.PHONY : lua/lvm.c.i
+
+lua/lvm.s: lua/lvm.c.s
+
+.PHONY : lua/lvm.s
+
+# target to generate assembly for a file
+lua/lvm.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lvm.c.s
+.PHONY : lua/lvm.c.s
+
+lua/lzio.o: lua/lzio.c.o
+
+.PHONY : lua/lzio.o
+
+# target to build an object file
+lua/lzio.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lzio.c.o
+.PHONY : lua/lzio.c.o
+
+lua/lzio.i: lua/lzio.c.i
+
+.PHONY : lua/lzio.i
+
+# target to preprocess a source file
+lua/lzio.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lzio.c.i
+.PHONY : lua/lzio.c.i
+
+lua/lzio.s: lua/lzio.c.s
+
+.PHONY : lua/lzio.s
+
+# target to generate assembly for a file
+lua/lzio.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/lua/lzio.c.s
+.PHONY : lua/lzio.c.s
+
+src/luainpython.o: src/luainpython.c.o
+
+.PHONY : src/luainpython.o
+
+# target to build an object file
+src/luainpython.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/src/luainpython.c.o
+.PHONY : src/luainpython.c.o
+
+src/luainpython.i: src/luainpython.c.i
+
+.PHONY : src/luainpython.i
+
+# target to preprocess a source file
+src/luainpython.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/src/luainpython.c.i
+.PHONY : src/luainpython.c.i
+
+src/luainpython.s: src/luainpython.c.s
+
+.PHONY : src/luainpython.s
+
+# target to generate assembly for a file
+src/luainpython.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/src/luainpython.c.s
+.PHONY : src/luainpython.c.s
+
+src/pythoninlua.o: src/pythoninlua.c.o
+
+.PHONY : src/pythoninlua.o
+
+# target to build an object file
+src/pythoninlua.c.o:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/src/pythoninlua.c.o
+.PHONY : src/pythoninlua.c.o
+
+src/pythoninlua.i: src/pythoninlua.c.i
+
+.PHONY : src/pythoninlua.i
+
+# target to preprocess a source file
+src/pythoninlua.c.i:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/src/pythoninlua.c.i
+.PHONY : src/pythoninlua.c.i
+
+src/pythoninlua.s: src/pythoninlua.c.s
+
+.PHONY : src/pythoninlua.s
+
+# target to generate assembly for a file
+src/pythoninlua.c.s:
+	$(MAKE) -f CMakeFiles/lua.dir/build.make CMakeFiles/lua.dir/src/pythoninlua.c.s
+.PHONY : src/pythoninlua.c.s
 
 # Help Target
 help:
@@ -158,8 +1077,111 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lua"
-	@echo "... python"
-	@echo "... src"
+	@echo "... lua/lapi.o"
+	@echo "... lua/lapi.i"
+	@echo "... lua/lapi.s"
+	@echo "... lua/lauxlib.o"
+	@echo "... lua/lauxlib.i"
+	@echo "... lua/lauxlib.s"
+	@echo "... lua/lbaselib.o"
+	@echo "... lua/lbaselib.i"
+	@echo "... lua/lbaselib.s"
+	@echo "... lua/lbitlib.o"
+	@echo "... lua/lbitlib.i"
+	@echo "... lua/lbitlib.s"
+	@echo "... lua/lcode.o"
+	@echo "... lua/lcode.i"
+	@echo "... lua/lcode.s"
+	@echo "... lua/lcorolib.o"
+	@echo "... lua/lcorolib.i"
+	@echo "... lua/lcorolib.s"
+	@echo "... lua/lctype.o"
+	@echo "... lua/lctype.i"
+	@echo "... lua/lctype.s"
+	@echo "... lua/ldblib.o"
+	@echo "... lua/ldblib.i"
+	@echo "... lua/ldblib.s"
+	@echo "... lua/ldebug.o"
+	@echo "... lua/ldebug.i"
+	@echo "... lua/ldebug.s"
+	@echo "... lua/ldo.o"
+	@echo "... lua/ldo.i"
+	@echo "... lua/ldo.s"
+	@echo "... lua/ldump.o"
+	@echo "... lua/ldump.i"
+	@echo "... lua/ldump.s"
+	@echo "... lua/lfunc.o"
+	@echo "... lua/lfunc.i"
+	@echo "... lua/lfunc.s"
+	@echo "... lua/lgc.o"
+	@echo "... lua/lgc.i"
+	@echo "... lua/lgc.s"
+	@echo "... lua/linit.o"
+	@echo "... lua/linit.i"
+	@echo "... lua/linit.s"
+	@echo "... lua/liolib.o"
+	@echo "... lua/liolib.i"
+	@echo "... lua/liolib.s"
+	@echo "... lua/llex.o"
+	@echo "... lua/llex.i"
+	@echo "... lua/llex.s"
+	@echo "... lua/lmathlib.o"
+	@echo "... lua/lmathlib.i"
+	@echo "... lua/lmathlib.s"
+	@echo "... lua/lmem.o"
+	@echo "... lua/lmem.i"
+	@echo "... lua/lmem.s"
+	@echo "... lua/loadlib.o"
+	@echo "... lua/loadlib.i"
+	@echo "... lua/loadlib.s"
+	@echo "... lua/lobject.o"
+	@echo "... lua/lobject.i"
+	@echo "... lua/lobject.s"
+	@echo "... lua/lopcodes.o"
+	@echo "... lua/lopcodes.i"
+	@echo "... lua/lopcodes.s"
+	@echo "... lua/loslib.o"
+	@echo "... lua/loslib.i"
+	@echo "... lua/loslib.s"
+	@echo "... lua/lparser.o"
+	@echo "... lua/lparser.i"
+	@echo "... lua/lparser.s"
+	@echo "... lua/lstate.o"
+	@echo "... lua/lstate.i"
+	@echo "... lua/lstate.s"
+	@echo "... lua/lstring.o"
+	@echo "... lua/lstring.i"
+	@echo "... lua/lstring.s"
+	@echo "... lua/lstrlib.o"
+	@echo "... lua/lstrlib.i"
+	@echo "... lua/lstrlib.s"
+	@echo "... lua/ltable.o"
+	@echo "... lua/ltable.i"
+	@echo "... lua/ltable.s"
+	@echo "... lua/ltablib.o"
+	@echo "... lua/ltablib.i"
+	@echo "... lua/ltablib.s"
+	@echo "... lua/ltm.o"
+	@echo "... lua/ltm.i"
+	@echo "... lua/ltm.s"
+	@echo "... lua/lundump.o"
+	@echo "... lua/lundump.i"
+	@echo "... lua/lundump.s"
+	@echo "... lua/lutf8lib.o"
+	@echo "... lua/lutf8lib.i"
+	@echo "... lua/lutf8lib.s"
+	@echo "... lua/lvm.o"
+	@echo "... lua/lvm.i"
+	@echo "... lua/lvm.s"
+	@echo "... lua/lzio.o"
+	@echo "... lua/lzio.i"
+	@echo "... lua/lzio.s"
+	@echo "... src/luainpython.o"
+	@echo "... src/luainpython.i"
+	@echo "... src/luainpython.s"
+	@echo "... src/pythoninlua.o"
+	@echo "... src/pythoninlua.i"
+	@echo "... src/pythoninlua.s"
 .PHONY : help
 
 

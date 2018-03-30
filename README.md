@@ -1,16 +1,16 @@
 Details
 ===
 
-(This repo is a fork of https://github.com/bastibe/lunatic-python)
+This repo is based on https://github.com/bastibe/lunatic-python which provide a way to run lua script in python.
+
+Main changes from the orignal repo:
+
+* Support multiple lua states
+* Support multiple return values from lua to python
+
+Works on macOS and Linux.
 
 ---
-
-This is a fork of Lunatic Python, which can be found on the 'net at http://labix.org/lunatic-python.
-
-Sadly, Lunatic Python is very much outdated and won't work with either a current Python or Lua.
-
-This is an updated version of lunatic-python that works with Python 2.7-3.x and Lua 5.1-5.3.
-I tried contacting the original author of Lunatic Python, but got no response.
 
 Installing
 ---
