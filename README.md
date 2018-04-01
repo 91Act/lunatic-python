@@ -30,9 +30,10 @@ Copy `lua.so` to one of the python `sys.path` then:
 
 ```python
 import lua
-
-lua.execute(r'''
+lua_state = lua.newState()
+lua.execute(lua_state, r'''
     print('hello world!')
 ''')
+lua.closeState(lua_state)
 ```
 
